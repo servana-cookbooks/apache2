@@ -110,6 +110,8 @@ default['apache']['keepalive'] = "On"
 default['apache']['keepaliverequests'] = 100
 default['apache']['keepalivetimeout'] = 5
 
+default['apache']['max_request_len'] = 2000000
+
 # Security
 default['apache']['servertokens'] = "Prod"
 default['apache']['serversignature'] = "On"

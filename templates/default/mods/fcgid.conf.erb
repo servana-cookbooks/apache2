@@ -1,6 +1,7 @@
 <IfModule mod_fcgid.c>
   AddHandler    fcgid-script .fcgi
-  IPCConnectTimeout 20
+  IPCConnectTimeout <%=node['apache']['fcgi_ipc_connect_timeout']%>
+  IPCCommTimeout <%=node['apache']['fcgi_ipc_comm_timeout']%>
   IdleTimeout <%=node['apache']['fcgi_idle_timeout']%>
   BusyTimeout <%=node['apache']['fcgi_busy_timeout']%>
   #MaxRequestLen 2MB

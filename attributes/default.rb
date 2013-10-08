@@ -141,6 +141,8 @@ default['apache']['worker']['maxrequestsperchild'] = 0
 
 default['apache']['fcgi_idle_timeout'] = 120
 default['apache']['fcgi_busy_timeout'] = 120
+default['apache']['fcgi_ipc_connect_timeout'] = 300
+default['apache']['fcgi_ipc_comm_timeout'] = 7200
 
 # Default modules to enable via include_recipe
 

@@ -139,6 +139,9 @@ default['apache']['worker']['maxsparethreads'] = 192
 default['apache']['worker']['threadsperchild'] = 64
 default['apache']['worker']['maxrequestsperchild'] = 0
 
+default['apache']['fcgi_idle_timeout'] = 120
+default['apache']['fcgi_busy_timeout'] = 120
+
 # Default modules to enable via include_recipe
 
 default['apache']['default_modules'] = %w{
